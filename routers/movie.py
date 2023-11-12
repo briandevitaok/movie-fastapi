@@ -7,6 +7,8 @@ from models.movie import Movie as ModelMovie
 from fastapi.encoders import jsonable_encoder
 from fastapi import APIRouter
 from user_jwt import validateToken
+from sqlalchemy.orm import Session
+
 
 
 routerMovie = APIRouter()
