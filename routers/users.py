@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel 
 from fastapi.responses import HTMLResponse,JSONResponse
-from user_jwt import createToken,validateToken
+from user_jwt import createToken, validateToken
 login_user = APIRouter()
 
 class User(BaseModel):
